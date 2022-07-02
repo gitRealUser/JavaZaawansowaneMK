@@ -1,4 +1,4 @@
-package obiektowe.powtorka.osoby;
+package dzien1;
 
 public class OsobaDemo {
     public static void main(String[] args) {
