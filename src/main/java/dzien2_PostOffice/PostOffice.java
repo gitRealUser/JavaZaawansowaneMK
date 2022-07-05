@@ -6,7 +6,7 @@ public class PostOffice {
 
     private double income = 0;
 
-    Letter[] letters = new Letter[10];
+    Letter[] letters = new Letter[2];
 
     double preapreParcel(Parcel parcel, double fee) {
         if (parcel.calculation() == fee) {
@@ -40,10 +40,21 @@ public class PostOffice {
         return parcelReturn;
     }
 
-//    Letter prepareLetter (String senderAddress, String recipientAddress){
-//        Letter
-//
-//    }
+    void prepareLetter (Letter letter){
+        for(int i = 0; i < letters.length; i++){
+            if(letters[i] == null){
+                letters[i] = letter;
+                break;
+            }
+            else{
+                continue;
+            }
+        }
+        if (letters[letters.length-1] != null){
+            System.out.println("Post is full");
+        }
+
+    }
 
 
 }

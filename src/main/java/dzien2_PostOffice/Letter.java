@@ -10,6 +10,7 @@ public class Letter {
     public Letter(String senderAddress, String recipientAddress) {
         this.senderAddress = senderAddress;
         this.recipientAddress = recipientAddress;
+
     }
 
     double letterPrice (boolean priority){

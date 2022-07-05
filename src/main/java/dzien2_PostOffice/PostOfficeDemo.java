@@ -54,7 +54,17 @@ public class PostOfficeDemo {
 
         System.out.println("---5---");
 
+        Letter letter1 = new Letter("Janke", "Konki");
+        Letter letter2 = new Letter("IKS", "IGREK");
+        Letter letter3 = new Letter("Janke", "Konki");
+
+        postOffice.prepareLetter(letter1);
+        postOffice.prepareLetter(letter2);
+        postOffice.prepareLetter(letter3);
+
         System.out.println(postOffice.letters[0]);
+        System.out.println(postOffice.letters[1]);
+
 
 
     }
