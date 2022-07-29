@@ -1,19 +1,17 @@
 package dzien4_Inheritance;
 
 public class Monkey extends Animal {
-    private int age;
-    private String name;
+
     private int tailLenght;
 
+
     public Monkey(String name, int age,  int tailLenght) {
-        this.age = age;
-        this.name = name;
+        super(age, name);
         this.tailLenght = tailLenght;
     }
 
     public Monkey() {
-        name = "Jacek";
-        age = 8;
+        super(8, "Jacek");
         tailLenght = 20;
     }
 
@@ -29,13 +27,11 @@ public class Monkey extends Animal {
         System.out.println("Monkey is eating banana");
     }
 
+    public void makeSound(){
 
-    @Override
-    public String toString() {
-        return "Monkey{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                ", tailLenght=" + tailLenght +
-                '}';
+        System.out.println("Sound !!! Monkey class");
     }
+
+
+
 }

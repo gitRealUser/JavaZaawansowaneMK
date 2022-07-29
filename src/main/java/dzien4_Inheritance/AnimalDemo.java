@@ -19,13 +19,18 @@ public class AnimalDemo {
         animals.add(monkey2);
         animals.add(whale);
         animals.add(whale2);
-        System.out.println(animals);
 
 
-        for(Animal animal: animals){
-            animal.eat();
-            System.out.println("---");
-        }
+
+//        for(Animal animal: animals){
+//            animal.eat();
+//            System.out.println("---");
+//        }
+
+//        AnimaGuide animaGuide = new AnimaGuide();
+//        animaGuide.feedMonkey(monkey);
+
+        monkey.makeSound();
 
 
 
